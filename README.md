@@ -1,4 +1,5 @@
 # theBuzzyChronicles
+## BuzzyChronicles: Where Furry Tails, Finned Tales, and Sageful Adventures Sprout
 
 # Garden 
 - what is planted and where and when
