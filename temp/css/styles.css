@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gloriahallelujah/v21/LYjYdHv3kUk9BMV96EIswT9DIbW-MLSy.ttf) format('truetype');
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #04333b;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #F1CE65;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  /* New CSS for individual letter fade in */
+}
+body main #logo {
+  opacity: 0;
+  /* Start with the logo hidden */
+  animation: fadeIn 5s forwards 5s;
+}
+body main #adventures-text {
+  opacity: 0;
+  animation: fadeIn 2s forwards 1s;
+}
+body main #adventures-text span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

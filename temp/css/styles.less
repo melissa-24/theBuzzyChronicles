@@ -1,0 +1,67 @@
+@ltYellow: #F8F59D;
+@font: #000000;
+@mdGreen: #47805E;
+@ltGreen: #ACCAB3;
+@beeYellow: #F1CE65;
+@brown: #C29E8D;
+@pink: #FF8B8B;
+@white: #ffffff;
+@bg: #04333b;
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: @beeYellow;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+
+        #logo {
+            opacity: 0; /* Start with the logo hidden */
+            animation: fadeIn 5s forwards 5s;
+        }
+        #adventures-text {
+            opacity: 0;
+            animation: fadeIn 2s forwards 1s;
+        }
+        
+        /* New CSS for individual letter fade in */
+        #adventures-text span {
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
